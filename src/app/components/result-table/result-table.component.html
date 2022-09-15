@@ -1,0 +1,30 @@
+<div class="table-container">
+    <div *ngFor="let order of workOrdersToDisplay">  
+    <table>
+            <tr>
+                <td>WO ID</td>
+                <td>{{order.work_order_id}}</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>{{order.description}}</td>
+            </tr>
+            <tr>
+                <td>Received date</td>
+                <td>{{order.received_date}}</td>
+            </tr>
+            <tr>
+                <td>Assigned to</td>
+                <td>{{order.assigned_to}}</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>{{order.status}}</td>
+            </tr>
+            <tr>
+                <td>Priority</td>
+                <td>{{order.priority}}</td>
+            </tr>
+        </table>
+    </div> 
+</div> 
